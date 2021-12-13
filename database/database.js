@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/mean_crud_db');
+mongoose.connect('mongodb+srv://Noir:Xenon777@cluster0.cpdfo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
 const schemaStudents = new mongoose.Schema({
     name: {type: String, required: true},
