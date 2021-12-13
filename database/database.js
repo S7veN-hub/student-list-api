@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://Noir:59oHp84Pg1x99hYq@cluster0.cpdfo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://Noir:59oHp84Pg1x99hYq@cluster0.cpdfo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
 
 const schemaStudents = new mongoose.Schema({
     name: {type: String, required: true},
