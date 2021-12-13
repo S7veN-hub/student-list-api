@@ -3,7 +3,7 @@ const routerStudents = require('./routes/routes-estudiantes/routesStudents');
 const express = require('express');
 const app = express();
 
-app.set('port', 3000);
+app.set('port', process.env.POTY || 3000);
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
